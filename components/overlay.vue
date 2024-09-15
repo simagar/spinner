@@ -14,11 +14,11 @@
 </template>
 
 <script setup>
-import {useAppStore} from "../../stores/app";
+import {useSpinnerStore} from "../stores/spinner";
 
-const appStore = useAppStore()
+const spinnerStore = useSpinnerStore()
 const showSpinner = computed(() => {
-  return appStore.isLoading
+  return spinnerStore.isLoading
 })
 </script>
 
